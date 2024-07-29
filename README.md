@@ -61,3 +61,60 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] Adicionar um botão para excluir o registro. Exibir um modal de confirmação antes de excluir a foto.
    - [x] Adicionar um botão para editar o registro. Exibir um formulário com os campos preenchidos para que o usuário possa editar o registro.
    - [ ] (opcional) Adicionar um botão para compartilhar a foto e a localização em redes sociais.
+
+4. Criar uma SinglePageApplication (SPA) para exibir informações básicas sobre o estudante. 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Função assíncrona para definir as rotas da SPA
+    const router = async () => {
+        const routes = [
+            { path: "/", view: () => document.getElementById("home") },
+            // TODO: Adicionar as rotas para as páginas "about" e "contact"
+        ];
+
+        // Função para verificar se a rota atual é válida
+        const potentialMatches = routes.map(route => {
+            return {
+                route: route,
+                isMatch: location.pathname === route.path
+            };
+        });
+
+        // Verifica se a rota atual é válida, se não for, redireciona para a primeira rota
+        // TODO: Adicionar a lógica para verificar se a rota atual é válida. Use a função find() para encontrar a rota correspondente em "potentialMatches"
+
+        if (!match) {
+            match = {
+                route: routes[0],
+                isMatch: true
+            };
+        }
+
+        // Remove a classe "active" de todas as seções
+        document.querySelectorAll("section").forEach(section => {
+            // TODO: Remover a classe "active" de todas as seções
+        });
+
+        // TODO: Adicionar a classe "active" na seção correspondente à rota atual
+    };
+
+    // Função para navegar entre as páginas
+    const navigateTo = url => {
+        history.pushState(null, null, url);
+        router();
+    };
+
+    // Adiciona o evento "popstate" para navegar entre as páginas com o botão de voltar do navegador
+    window.addEventListener("popstate", router);
+
+    document.body.addEventListener("click", e => {
+        if (e.target.matches("[data-link]")) {
+            e.preventDefault();
+            console.log(e.target.href);
+            // TODO: Adicionar a função navigateTo para navegar entre as páginas
+        }
+    });
+
+    router();
+});
