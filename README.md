@@ -162,3 +162,4 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 2.4.7 sobre foco visível da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 3.3.3 sobre sugestão de erro da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 4.1.3 sobre status ou erros da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
+   - [x] *(opcional)* Inteligência Artificial: adicionar integração com uma API de IA para gerar perguntas automaticamente. Use a API `fetch` para carregar as perguntas da IA.
