@@ -182,7 +182,7 @@ Desenvolver um sistema web para controle financeiro pessoal utilizando uma arqui
 3. **Modelo de Dados:**
    - **Desafio:** Crie um modelo de dados abrangente para representar as transações financeiras. O modelo deve conter os campos `id`, `description`, `amount`, `type` (receita ou despesa), `category`, `date`, `user_id` (para multiusuário), etc.
 
-4. **Rotas CRUD:**
+4. **Rotas:**
    - **Desafio:** Crie rotas para listar, adicionar, editar e excluir as transações financeiras. Utilize os métodos HTTP `GET`, `POST`, `PUT` e `DELETE`.
    - **Extras:** Implemente paginação e filtros (por categoria, data, tipo).
 
