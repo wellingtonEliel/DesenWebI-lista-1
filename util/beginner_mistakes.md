@@ -240,6 +240,10 @@ O Visual Studio Code é um editor de código popular entre os desenvolvedores we
 - **Live Server**: Permite visualizar as alterações em tempo real no navegador.
 - **Prettier**: Formata automaticamente o código para seguir um estilo consistente.
 
-## Conclusão
+## Tarefa Prática
 
-Esses são apenas alguns dos erros comuns que os principiantes cometem ao programar para web. A prática constante, a leitura de documentação e a colaboração com outros programadores podem ajudar a evitar esses erros e a melhorar suas habilidades de programação.
+1. Instale as extensões Live Server e Prettier no Visual Studio Code. Use o Live Server para visualizar as alterações em tempo real e o Prettier para formatar automaticamente o código.
+2. Crie uma estrutura de pastas para um projeto web. Inclua arquivos HTML, CSS e JavaScript. Use nomes de arquivos e pastas em minúsculas e separe palavras com underscore (_) ou hífen (-). No HTML, adicione um link para o arquivo CSS e um script JavaScript. No CSS, defina estilos básicos para a página. No JavaScript, adicione um console.log para verificar se o script está sendo executado corretamente. Abra o projeto em um servidor local e verifique se tudo está funcionando corretamente. Não esqueça de adicionar o meta viewport no HTML e testar em dispositivos móveis usando o modo de inspeção do navegador.
+3. Experimente adicionar um script do tipo `module` ao projeto. Verifique se ele funciona corretamente em um servidor local.
+4. Experimente adicionar um botão que faça uma requisição fetch ao projeto. Verifique se os dados são recuperados corretamente e manipule o DOM (Document Object Model) para exibir os dados na página. Use `document.createElement`, `document.createTextNode` e `element.appendChild` para adicionar os dados ao DOM. Sugiro usar a API [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para recuperar dados de teste.
+5. Publique o projeto em um repositório no GitHub e compartilhe o link com um colega para revisão usando o recurso de `pull request`. Use o GitHub Pages para hospedar o projeto online.
