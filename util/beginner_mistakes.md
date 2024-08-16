@@ -171,6 +171,8 @@ Essa prática não é necessária para scripts do tipo `module`, pois eles são 
 
 Ao desenvolver sites, é importante usar um servidor local para testar o código. Recursos como script do tipo `module` não funcionam corretamente ao abrir arquivos diretamente no navegador (usando `file://`). Existem várias ferramentas para configurar um servidor local, como `http-server`, `live-server`, `XAMPP`, `WampServer`, `MAMP`, entre outros.
 
+> Em JavaScript, o uso de módulos (`import` e `export`) serve para dividir o código em arquivos separados e reutilizáveis. No entanto, ao abrir arquivos diretamente no navegador, você verá um erro de CORS (Cross-Origin Resource Sharing). Isso ocorre porque o navegador bloqueia solicitações de recursos de origens diferentes para proteger a segurança do usuário.
+
 Para demonstrar, considere o seguinte código:
 
 ```javascript
