@@ -44,7 +44,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] Adicionar a opção de escolher entre temas claro e escuro. Salvar a escolha no `localStorage`.
    - [x] **Acessibilidade**: respeitar o critério 1.3.1 sobre informações e relações da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 2.1.1 sobre teclado da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
-   - [] (opcional): Adicionar animações de transição ao adicionar, remover e marcar como concluída uma tarefa.
+   - [ ] (opcional): Adicionar animações de transição ao adicionar, remover e marcar como concluída uma tarefa.
 
 2. A página picsum.photos contém uma API que retorna imagens aleatórias. Crie um sistema web que tenha um formulário para o usuário informar a largura e a altura da imagem que deseja e a quantidade de imagens (escolher entre 3, 5, 10 ou 20). Ao clicar em um botão, o sistema deve exibir as imagens retornadas pela API. O resultado deve ser organizado como um grid de imagens. Permita que o usuário possa baixar a imagem que desejar em tamanho Full HD. As imagens precisam estar no formato `webp`. Leia a documentação da API para saber como fazer a requisição: [https://picsum.photos/](https://picsum.photos/). Além disso, faça:
    - [x] Adicionar validação de formulário para os campos de largura, altura e quantidade de imagens. Caso o usuário informe um valor inválido, exibir uma mensagem de erro. Use html5 e/ou JavaScript para fazer a validação. Traga valores padrões para os campos.
@@ -62,7 +62,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] Criar uma tabela para exibir id, título, descrição, localização e data da foto. Adicionar um botão para visualizar detalhes da foto em uma modal ou em outra página. Para a localização, exibir um mapa com a localização marcada.
    - [x] Adicionar um botão para excluir o registro. Exibir um modal de confirmação antes de excluir a foto.
    - [x] Adicionar um botão para editar o registro. Exibir um formulário com os campos preenchidos para que o usuário possa editar o registro.
-   - [] (opcional) Adicionar um botão para compartilhar a foto e a localização em redes sociais.
+   - [ ] (opcional) Adicionar um botão para compartilhar a foto e a localização em redes sociais.
 
 4. Criar uma SinglePageApplication (SPA) para exibir informações básicas sobre você como estudante. A SPA deve conter as seguintes páginas:
    - [x] Home: exibir uma foto sua, seu nome, curso, semestre, e-mail e uma rede social para contato.
@@ -73,7 +73,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 1.4.4 sobre redimensionamento de texto da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 3.3.2 sobre rótulos ou instruções da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 4.1.2 sobre nome, função e valor da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
-   - [] (opcional) Implementar o envio de e-mail (SMTP) para o seu e-mail pessoal ao enviar o formulário de contato.
+   - [ ] (opcional) Implementar o envio de e-mail (SMTP) para o seu e-mail pessoal ao enviar o formulário de contato.
 
 5. Criar um site de e-commerce para uma loja de informática ou outro tema. O site deve conter as seguintes páginas:
    - [x] Página Inicial: exibir todos os produtos disponíveis para venda. Adicionar filtros para pesquisar produtos por categoria e marca. Adicione um campo de busca para pesquisar produtos por nome.
@@ -88,9 +88,9 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 2.4.3 sobre foco do alvo da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 3.3.1 sobre identificação de erros da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 4.1.1 sobre nome, função e valor da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
-   - [] (opcional) Adicionar um sistema de avaliação de produtos com estrelas. Permitir que o usuário possa avaliar e comentar sobre o produto.
-   - [] (opcional) Usar uma API de pagamento, como o PayPal ou Stripe, para simular o pagamento.
-   - [] (opcional) Adicionar um sistema de recomendação de produtos baseado nas preferências do usuário.
+   - [ ] (opcional) Adicionar um sistema de avaliação de produtos com estrelas. Permitir que o usuário possa avaliar e comentar sobre o produto.
+   - [ ] (opcional) Usar uma API de pagamento, como o PayPal ou Stripe, para simular o pagamento.
+   - [ ] (opcional) Adicionar um sistema de recomendação de produtos baseado nas preferências do usuário.
 
 Os produtos podem estar disponíveis em um arquivo JSON (Exemplo abaixo) ou em uma API externa como [https://dummyjson.com/docs/products](https://dummyjson.com/docs/products).
 
