@@ -35,6 +35,107 @@ Além disso, siga essas boas práticas em todos os exercícios:
 
 ## Lista de Exercícios 1
 
+1. Use o conteúdo HTML abaixo contém a estrutura base para uma página com barra de navegação (logotipo a esquerda e menu a direita), cabeçalho, conteúdo principal dividido em três colunas e rodapé. Adicione o estilo CSS para organizar os elementos. Use 3 estilos diferentes para organizar o conteúdo:
+   - [x] Estilo 1: use `display: block` com `float`.
+   - [x] Estilo 2: use `display: flex` com `flex-direction`, `justify-content`, `align-items`, etc
+   - [x] Estilo 3: use `display: grid` com `grid-template-columns`, `grid-template-areas`, etc
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TITULO AQUI</title>
+    <meta name="description" content="DESCRICAO AQUI" />
+    <meta name="author" content="SEU_NOME" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar clearfix">
+      <a href="#" class="logo">Logotipo</a>
+      <div id="menu">
+        <ul>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Parceiros</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Contato</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="jumbotron">
+        <div class="container clearfix">
+          <h1>Hello, world!</h1>
+          <p>
+            This is a template for a simple marketing or informational website.
+            It includes a large callout called a jumbotron and three supporting
+            pieces of content. Use it as a starting point to create something
+            more unique.
+          </p>
+          <p>
+            <a class="btn btn-primary">Learn more</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container clearfix">
+        <div class="linha">
+          <div class="coluna">
+            <h2>Heading</h2>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+              fermentum massa justo sit amet risus. Etiam porta sem malesuada
+              magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+              <a class="btn btn-small btn-secondary">View details</a>
+            </p>
+          </div>
+          <div class="coluna">
+            <h2>Heading</h2>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+              fermentum massa justo sit amet risus. Etiam porta sem malesuada
+              magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+              <a class="btn btn-small btn-secondary">View details</a>
+            </p>
+          </div>
+          <div class="coluna">
+            <h2>Heading</h2>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+              fermentum massa justo sit amet risus. Etiam porta sem malesuada
+              magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+              <a class="btn btn-small btn-secondary">View details</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© SEU_NOME 2024</p>
+    </footer>
+  </body>
+</html>
+```
+
 1. Criar um sistema web para uma lista de tarefas. O sistema deve permitir adicionar, remover e marcar como concluída uma tarefa. Além disso, faça:
    - [x] Adicionar um campo de texto para filtrar as tarefas por nome.
    - [x] Armazenar as tarefas no `localStorage` para que elas não sejam perdidas ao recarregar a página.
