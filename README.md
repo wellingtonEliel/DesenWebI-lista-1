@@ -136,7 +136,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
 </html>
 ```
 
-1. Criar um sistema web para uma lista de tarefas. O sistema deve permitir adicionar, remover e marcar como concluída uma tarefa. Além disso, faça:
+2. Criar um sistema web para uma lista de tarefas. O sistema deve permitir adicionar, remover e marcar como concluída uma tarefa. Além disso, faça:
    - [x] Adicionar um campo de texto para filtrar as tarefas por nome.
    - [x] Armazenar as tarefas no `localStorage` para que elas não sejam perdidas ao recarregar a página.
    - [x] Popular a lista de tarefas com alguns dados fictícios, caso o `localStorage` esteja vazio.
@@ -147,7 +147,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 2.1.1 sobre teclado da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [ ] (opcional): Adicionar animações de transição ao adicionar, remover e marcar como concluída uma tarefa.
 
-2. A página picsum.photos contém uma API que retorna imagens aleatórias. Crie um sistema web que tenha um formulário para o usuário informar a largura e a altura da imagem que deseja e a quantidade de imagens (escolher entre 3, 5, 10 ou 20). Ao clicar em um botão, o sistema deve exibir as imagens retornadas pela API. O resultado deve ser organizado como um grid de imagens. Permita que o usuário possa baixar a imagem que desejar em tamanho Full HD. As imagens precisam estar no formato `webp`. Leia a documentação da API para saber como fazer a requisição: [https://picsum.photos/](https://picsum.photos/). Além disso, faça:
+3. A página picsum.photos contém uma API que retorna imagens aleatórias. Crie um sistema web que tenha um formulário para o usuário informar a largura e a altura da imagem que deseja e a quantidade de imagens (escolher entre 3, 5, 10 ou 20). Ao clicar em um botão, o sistema deve exibir as imagens retornadas pela API. O resultado deve ser organizado como um grid de imagens. Permita que o usuário possa baixar a imagem que desejar em tamanho Full HD. As imagens precisam estar no formato `webp`. Leia a documentação da API para saber como fazer a requisição: [https://picsum.photos/](https://picsum.photos/). Além disso, faça:
    - [x] Adicionar validação de formulário para os campos de largura, altura e quantidade de imagens. Caso o usuário informe um valor inválido, exibir uma mensagem de erro. Use html5 e/ou JavaScript para fazer a validação. Traga valores padrões para os campos.
    - [x] Adicionar um botão/link para copiar o link da imagem. Use a API `navigator.clipboard` para fazer isso.
    - [x] Adicionar um botão/link para compartilhar a imagem no WhatsApp, por e-mail ou outra rede social.
@@ -155,7 +155,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 1.4.3 sobre contraste mínimo da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] **Acessibilidade**: respeitar o critério 2.4.4 sobre foco visível da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
 
-3. Criar um sistema web que permita ao usuário tirar uma foto com a câmera do dispositivo e marcar a localização da foto em um mapa. O sistema deve exibir a foto tirada e a localização no mapa. Além disso, faça:
+4. Criar um sistema web que permita ao usuário tirar uma foto com a câmera do dispositivo e marcar a localização da foto em um mapa. O sistema deve exibir a foto tirada e a localização no mapa. Além disso, faça:
    - [x] Adicionar um botão para tirar a foto. Use a API `navigator.mediaDevices.getUserMedia` para acessar a câmera do dispositivo. Caso o dispositivo não tenha câmera, permitir que o usuário faça o upload de uma foto.
    - [x] Adicionar um botão para marcar a localização da foto no mapa. Use a API `navigator.geolocation` para acessar a localização do dispositivo. Caso o dispositivo não tenha GPS, permitir que o usuário informe a localização manualmente.
    - [x] Adicionar um campo de texto para o usuário informar título (obrigatório) e descrição (opcional) da foto.
@@ -165,7 +165,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] Adicionar um botão para editar o registro. Exibir um formulário com os campos preenchidos para que o usuário possa editar o registro.
    - [ ] (opcional) Adicionar um botão para compartilhar a foto e a localização em redes sociais.
 
-4. Criar uma SinglePageApplication (SPA) para exibir informações básicas sobre você como estudante. A SPA deve conter as seguintes páginas:
+5. Criar uma SinglePageApplication (SPA) para exibir informações básicas sobre você como estudante. A SPA deve conter as seguintes páginas:
    - [x] Home: exibir uma foto sua, seu nome, curso, semestre, e-mail e uma rede social para contato.
    - [x] Sobre: exibir um texto curto sobre você, alguns hobbies, habilidades, projetos desenvolvidos, etc.
    - [x] Contato: exibir um formulário para o usuário enviar uma mensagem para você. O formulário deve conter os campos nome, e-mail, assunto e mensagem. Adicionar validação de formulário para os campos obrigatórios. Use html5 e/ou JavaScript para fazer a validação. Adicionar também algumas redes sociais para contato.
@@ -176,7 +176,7 @@ Além disso, siga essas boas práticas em todos os exercícios:
    - [x] **Acessibilidade**: respeitar o critério 4.1.2 sobre nome, função e valor da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [ ] (opcional) Implementar o envio de e-mail (SMTP) para o seu e-mail pessoal ao enviar o formulário de contato.
 
-5. Criar um site de e-commerce para uma loja de informática ou outro tema. O site deve conter as seguintes páginas:
+6. Criar um site de e-commerce para uma loja de informática ou outro tema. O site deve conter as seguintes páginas:
    - [x] Página Inicial: exibir todos os produtos disponíveis para venda. Adicionar filtros para pesquisar produtos por categoria e marca. Adicione um campo de busca para pesquisar produtos por nome.
    - [x] Detalhes do produto: exibir informações detalhadas sobre o produto, como nome, descrição, preço, fotos, etc.
    - [x] Carrinho de compras: exibir os produtos adicionados ao carrinho, quantidade, preço total, etc. Permitir adicionar, remover e alterar a quantidade de produtos no carrinho.
@@ -227,7 +227,7 @@ Os produtos podem estar disponíveis em um arquivo JSON (Exemplo abaixo) ou em u
 ]
 ```
 
-6. Criar um jogo estilo quiz para testar os conhecimentos dos usuários sobre um determinado tema relacionado a computação. O jogo deve conter as seguintes funcionalidades:
+7. Criar um jogo estilo quiz para testar os conhecimentos dos usuários sobre um determinado tema relacionado a computação. O jogo deve conter as seguintes funcionalidades:
    - [x] Página inicial: exibir uma breve descrição do jogo e um botão para iniciar o quiz.
    - [x] Perguntas: exibir uma pergunta por vez com 4 alternativas de resposta. Adicionar um cronômetro para limitar o tempo de resposta. Adicionar um botão para avançar para a próxima pergunta.
    - [x] Resultado: exibir a pontuação final do usuário e um botão para reiniciar o quiz.
@@ -244,7 +244,7 @@ Os produtos podem estar disponíveis em um arquivo JSON (Exemplo abaixo) ou em u
    - [x] **Acessibilidade**: respeitar o critério 4.1.3 sobre status ou erros da WCAG disponível em: [https://www.guia-wcag.com/](https://www.guia-wcag.com/).
    - [x] *(opcional)* Inteligência Artificial: adicionar integração com uma API de IA para gerar perguntas automaticamente. Use a API `fetch` para carregar as perguntas da IA.
 
-7. Usar uma estratégia de `web scrapping` para coletar informações sobre o corpo docente do curso (disponível em: [https://videira.ifc.edu.br/ciencia-da-computacao/corpo-docente/](https://videira.ifc.edu.br/ciencia-da-computacao/corpo-docente/)). O sistema deve conter as seguintes funcionalidades:
+8. Usar uma estratégia de `web scrapping` para coletar informações sobre o corpo docente do curso (disponível em: [https://videira.ifc.edu.br/ciencia-da-computacao/corpo-docente/](https://videira.ifc.edu.br/ciencia-da-computacao/corpo-docente/)). O sistema deve conter as seguintes funcionalidades:
    - [x] Adicionar um campo de busca para filtrar professores por nome.
    - [x] Exibir as informações coletadas em uma tabela ou cards.
    - [x] Adicione um "loading" enquanto as informações são carregadas.
