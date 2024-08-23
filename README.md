@@ -1,4 +1,4 @@
-# DesenWebI-lista-2024
+# DesenWebI-lista-2024 - Lista 1
 
 Lista de exercícios para os alunos praticarem programação web na disciplina Desenvolvimento Web I no curso de ciência da computação do IFC Videira. A lista contém exercícios práticos para serem resolvidos com HTML, CSS e JavaScript.
 
