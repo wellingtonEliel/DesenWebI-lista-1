@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0;}
+
+.menu{
+list-style:none;
+border:1px solid #c0c0c0;
+display: block;
+}
+
+#menu ul { padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+#menu ul li{
+    display: block;
+    float: inline-end;
+}
+
+#menu ul li a { 
+    padding: 20px 10%; 
+    display: inline-block; 
+    background-color:#EDEDED; 
+    color: #333; 
+    text-decoration: none; 
+    border-bottom:3px solid #EDEDED; 
+}
