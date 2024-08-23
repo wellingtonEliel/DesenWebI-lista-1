@@ -1,6 +1,6 @@
 # DesenWebI-lista-2024
 
-Lista de exercícios para os alunos praticarem programação web na disciplina Desenvolvimento Web I no curso de ciência da computação do IFC Videira.
+Lista de exercícios para os alunos praticarem programação web na disciplina Desenvolvimento Web I no curso de ciência da computação do IFC Videira. A lista contém exercícios práticos para serem resolvidos com HTML, CSS e JavaScript.
 
 ## Estrutura de diretórios
 
@@ -22,7 +22,7 @@ DesenWebI-lista-2024
 
 ## Instruções
 
-Para cada exercício, crie um diretório `exercicio-xx` onde `xx` é o número do exercício. Dentro do diretório, crie os arquivos `index.html`, `style.css`, `main.js` e demais recursos para a solução do exercício.
+Para cada exercício, crie um diretório `exercicio-xx` onde `xx` é o número do exercício. Dentro do diretório, crie os arquivos `index.html`, `style.css`, `main.js` e demais recursos para a solução do exercício. O aluno pode fazer um `fork` deste repositório para resolver os exercícios ou criar um repositório próprio.
 
 Além disso, siga essas boas práticas em todos os exercícios:
    - [x] Adicionar meta tags para a codificação do documento (UTF-8), viewport.
