@@ -1,3 +1,8 @@
+// -------------------------------------
+//  Neste exercicio utilizo as APIs para acesso a camera e a localização
+// -------------------------------------
+
+
 let currentLocation = null;
 let photos = JSON.parse(localStorage.getItem('photos')) || [];
 const photoTableBody = document.querySelector('#photoTable tbody');
