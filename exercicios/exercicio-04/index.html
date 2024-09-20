@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Foto e Localização</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Captura de Foto e Localização</h1>
+    </header>
+
+    <main>
+        <section class="capture-section">
+            <h2>Tire uma foto</h2>
+            <video id="video" autoplay style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <img id="preview" style="display: none; width: 100%; max-width: 400px; border: 3px solid #007bff; border-radius: 10px; background-color: #e9ecef;">
+            <div>
+                <button id="takePhotoBtn">Tirar Foto</button>
+                <input type="file" id="uploadPhoto" accept="image/*" style="display: none;">
+                <label for="uploadPhoto" class="custom-file-upload">Escolher Foto</label>
+            </div>
+            <img id="uploadedImage" style="display:none; width:100%; max-width:400px;" />
+        </section>
+
+        <section class="location-section">
+            <h2>Marcar Localização</h2>
+            <button id="getLocationBtn">Obter Localização</button>
+            <div id="map" style="height: 300px;"></div>
+        </section>
+
+        <div class="info-section">
+            <h2>Informações da Foto</h2>
+            <input type="text" id="photoTitle" placeholder="Título (obrigatório)">
+            <textarea id="photoDescription" placeholder="Descrição (opcional)"></textarea>
+            <button id="savePhotoBtn">Salvar Foto e Localização</button>
+        </div>
+        
+        <section class="photo-table-section">
+            <h2>Fotos Capturadas</h2>
+            <table id="photoTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Descrição</th>
+                        <th>Localização</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal para visualização de detalhes da foto -->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2>Detalhes da Foto</h2>
+            <img id="modalImage" src="" alt="Foto">
+            <p id="modalTitle"></p>
+            <p id="modalDescription"></p>
+            <div id="modalMap" style="height: 300px;"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 @ Wellington Oliveira
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
