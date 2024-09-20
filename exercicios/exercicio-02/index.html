@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Lista de Tarefas</h1>
-    <button id="theme-toggle">Mudar Tema</button>
-    <input type="text" id="filter" placeholder="Filtrar tarefas">
-  </header>
-  <main>
-    <input type="text" id="new-task" placeholder="Adicionar nova tarefa" aria-label="Nova tarefa">
-    <button id="add-task">Adicionar Tarefa</button>
-    <ul id="task-list" aria-live="polite"></ul>
-  </main>
-  <footer>
-    <p>© 2024 Sua Empresa</p>
-  </footer>
+  <div class="app">
+    <header>
+      <h1>Lista de Tarefas</h1>
+      <div class="theme-toggle">
+        <button id="theme-btn" class="btn-theme">Alternar Tema</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="add-task">
+        <input type="text" id="task-input" placeholder="Adicionar nova tarefa..." />
+        <button id="add-btn" class="btn">Adicionar</button>
+      </div>
+
+      <div class="filter-task">
+        <input type="text" id="filter-input" placeholder="Filtrar tarefas..." />
+      </div>
+
+      <ul id="task-list"></ul>
+    </main>
+
+    <footer>
+      <p>© Seu Nome 2024</p>
+    </footer>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
