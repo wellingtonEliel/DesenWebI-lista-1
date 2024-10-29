@@ -1,24 +1,47 @@
+let products = []; // Array para armazenar os produtos
+
 async function loadProducts() {
     const productList = document.getElementById("product-list");
     try {
         const response = await fetch("products.json");
-        const products = await response.json();
+        products = await response.json(); // Armazena os produtos no array global
 
-        productList.innerHTML = products.map(product => `
-            <div class="product-item">
-                <img src="img/${product.images[0]}" alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p>R$${product.price.toFixed(2)}</p>
-                <button onclick="addToCart(${product.id})">Adicionar ao Carrinho</button>
-                <button onclick="window.location.href='product-details.html?id=${product.id}'">Ver Detalhes</button>
-            </div>
-        `).join("");
-
+        displayProducts(products); // Exibe todos os produtos inicialmente
     } catch (error) {
         productList.innerHTML = "<p>Erro ao carregar produtos. Tente novamente mais tarde.</p>";
         console.error("Erro ao carregar produtos:", error);
     }
+}
+
+function displayProducts(products) {
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = products.map(product => `
+        <div class="product-item">
+            <img src="img/${product.images[0]}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p>R$${product.price.toFixed(2)}</p>
+            <button onclick="addToCart(${product.id})">Adicionar ao Carrinho</button>
+            <button onclick="window.location.href='product-details.html?id=${product.id}'">Ver Detalhes</button>
+        </div>
+    `).join("");
+}
+
+function filterProducts() {
+    const searchValue = document.getElementById("search").value.toLowerCase();
+    const categoryValue = document.getElementById("category-filter").value;
+    const brandValue = document.getElementById("brand-filter").value;
+
+    const filteredProducts = products.filter(product => {
+        const matchesSearch = product.name.toLowerCase().includes(searchValue) || 
+                              product.description.toLowerCase().includes(searchValue);
+        const matchesCategory = !categoryValue || product.category === categoryValue; // Considera a categoria se não estiver vazia
+        const matchesBrand = !brandValue || product.brand === brandValue; // Considera a marca se não estiver vazia
+
+        return matchesSearch && matchesCategory && matchesBrand;
+    });
+
+    displayProducts(filteredProducts); // Exibe os produtos filtrados
 }
 
 // Adiciona produto ao carrinho
@@ -98,7 +121,4 @@ function processCheckout(event) {
 }
 
 // Inicializa a carga de produtos ou o carrinho
-document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById("product-list")) loadProducts();
-    if (document.getElementById("cart-items")) displayCart();
-});
+document.addEventListener("DOMContentLoaded", loadProducts);

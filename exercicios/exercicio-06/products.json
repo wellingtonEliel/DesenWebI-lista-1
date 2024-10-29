@@ -1,29 +1,29 @@
 [
   {
-    "id": 1,
-    "name": "Notebook",
-    "description": "Notebook Dell Inspiron 15 3000",
-    "price": 2999.99,
-    "category": "Notebook",
-    "brand": "Dell",
-    "images": ["notebook-dell.jpg", "notebook-dell-2.jpg"]
+      "id": 1,
+      "name": "Notebook Dell",
+      "description": "Notebook Dell com 16GB de RAM e 512GB SSD.",
+      "price": 3500.00,
+      "category": "Notebook",
+      "brand": "Dell",
+      "images": ["notebook-dell.jpg"]
   },
   {
-    "id": 2,
-    "name": "Monitor",
-    "description": "Monitor LG 24' LED Full HD",
-    "price": 899.99,
-    "category": "Monitor",
-    "brand": "LG",
-    "images": ["monitor-lg.jpg", "monitor-lg-2.jpg"]
+      "id": 2,
+      "name": "Monitor LG",
+      "description": "Monitor LG de 27 polegadas com resolução 4K.",
+      "price": 1500.00,
+      "category": "Monitor",
+      "brand": "LG",
+      "images": ["monitor-lg.jpg"]
   },
   {
-    "id": 3,
-    "name": "Teclado",
-    "description": "Teclado Mecânico Gamer HyperX Alloy FPS",
-    "price": 299.99,
-    "category": "Teclado",
-    "brand": "HyperX",
-    "images": ["teclado-hyperx.jpg", "teclado-hyperx-2.jpg"]
+      "id": 3,
+      "name": "Teclado HyperX",
+      "description": "Teclado mecânico HyperX com retroiluminação RGB.",
+      "price": 450.00,
+      "category": "Teclado",
+      "brand": "HyperX",
+      "images": ["teclado-hyperx.jpg"]
   }
 ]
