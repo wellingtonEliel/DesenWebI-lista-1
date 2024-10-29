@@ -1,0 +1,73 @@
+/* checkout.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: white; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #b22222; /* Vermelho escuro */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Fundo do conteúdo */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #b22222; /* Título em vermelho escuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: white; /* Texto branco para os rótulos */
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b22222; /* Borda vermelha escura */
+    border-radius: 5px;
+    background-color: #333; /* Fundo dos campos */
+    color: white; /* Texto dos campos */
+}
+
+button {
+    background-color: #b22222; /* Vermelho escuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #900; /* Tom mais escuro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b22222; /* Vermelho escuro */
+}

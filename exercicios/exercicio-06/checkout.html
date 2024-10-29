@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css"> <!-- Usando o CSS do checkout -->
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <main>
+        <h1>Finalizar Compra</h1>
+        <form id="checkout-form" onsubmit="processCheckout(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" required>
+            
+            <label for="payment">Forma de Pagamento:</label>
+            <select id="payment" required>
+                <option value="credit">Cartão de Crédito</option>
+                <option value="debit">Cartão de Débito</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Confirmar Compra</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Casa do Computador @2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

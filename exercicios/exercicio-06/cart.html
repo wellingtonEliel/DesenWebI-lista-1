@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/cart.css"> <!-- Usando o CSS do carrinho -->
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <main>
+        <h1>Carrinho de Compras</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="checkout-button" onclick="location.href='checkout.html'">Finalizar Compra</button>
+    </main>
+
+    <footer>
+        <p>Casa do Computador @2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
